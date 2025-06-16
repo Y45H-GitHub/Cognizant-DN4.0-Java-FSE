@@ -1,0 +1,24 @@
+Mandatory
+
+        1. Spring Core_Maven
+        Exercise 1: Configuring a Basic Spring Application
+        Exercise 2: Implementing Dependency Injection
+        Exercise 4: Creating and Configuring a Maven Project
+
+        2. 1. spring-data-jpa-handson
+        Spring Data JPA - Quick Example
+        Difference between JPA, Hibernate and Spring Data JPA
+
+Additional
+
+        1. spring-data-jpa-handson
+        Implement services for managing Country
+        Find a country based on country code
+        Add a new country
+
+        2. spring-data-jpa-handson
+        Demonstrate implementation of Query Methods feature of Spring Data JPA
+        Demonstrate implementation of O/R Mapping
+
+        3. spring-data-jpa-handson
+        Demonstrate writing Hibernate Query Language and Native Query
