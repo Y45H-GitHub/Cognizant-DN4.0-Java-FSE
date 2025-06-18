@@ -1,4 +1,4 @@
-## Week1 
+## Week- 1 
 ### Design Pattern and Principles Exercise 1 Outputs
 ![image](https://github.com/user-attachments/assets/876bb73d-8d3f-49af-86e5-535ed1199801)
 
@@ -20,3 +20,18 @@ Printing from PDF Document
 Printing from PDF Document
 
 ```
+---
+### DSA Exercises 2 
+![image](https://github.com/user-attachments/assets/fb34ee6f-d8e6-4224-82b6-23f547170776)
+
+Output: (for size 145)
+```
+Linear Search: Index = 99, Time = 12700 ns
+Binary Search: Index = 99, Time = 4800 ns
+```
+Output: (for size 1400)
+```
+Linear Search: Index = 99, Time = 16900 ns
+Binary Search: Index = 99, Time = 16800 ns
+```
+
