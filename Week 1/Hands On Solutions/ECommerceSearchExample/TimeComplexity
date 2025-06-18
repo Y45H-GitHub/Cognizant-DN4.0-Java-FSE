@@ -1,0 +1,30 @@
+BigO notation means how much time our program/algorithm will take as the size of the input increases
+
+Therefore chosing the right DS for the right operation is crucial to manage proper API calls, backend performance.
+
+There are various notations like:
+O(1) - means constant time , like arr[i] or hashMap.get(i)
+O(log n) - logarithmic time complexity , like in binary Search
+O(n) - Linear	eg looping an array
+etc.
+
+For searching in arrays:
+Case 1 : Array is unsorted
+        
+        -We do a linear search :
+        Best	O(1) — if it's at index 0
+        Average O(n) — if it's at random index
+        Worst	O(n) — last or not found
+        
+Case 2: Array is sorted
+
+        -We do a binary search :
+        Best	O(1) — if it's at mid index
+        Average/Worst	O(log n) — last or not found
+
+Other types of notations apart from BigO are:
+Big Omega (Ω) - Best case scenario
+Big Theta (Θ) - Average case scenario
+Small o - Upper bound
+Small omega (ω) - Lower bound
+BigO is used to understand the upper bound of the algo. 
