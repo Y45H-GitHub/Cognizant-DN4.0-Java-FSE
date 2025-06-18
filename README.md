@@ -39,5 +39,5 @@ Each week is organized into its own directory, with two main subfolders:
 - **Name**: Yash Vardhan Choudhary
 - **Stage 2 Track**: Java FSE
 - **IEM Kolkata BTECH'26** working on Backend development, Spring Boot, DevOps, and building real-world applications.
-
+- **Resume:**[View](https://drive.google.com/file/d/1kd2bbsMWE0Xg-dcSwRprOaiOFceYc1yD/view?usp=drive_link) 
 ---
