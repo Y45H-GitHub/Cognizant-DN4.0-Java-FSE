@@ -36,7 +36,7 @@ public class Product {
     }
 
     public static void main(String[] args) {
-    int size = 145; 
+    int size = 900022; // Use a large size for testing
     Product[] productList = new Product[size];
 
     for (int i = 0; i < size; i++) {
