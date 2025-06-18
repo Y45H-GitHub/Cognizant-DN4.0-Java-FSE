@@ -34,4 +34,13 @@ Output: (for size 1400)
 Linear Search: Index = 99, Time = 16900 ns
 Binary Search: Index = 99, Time = 16800 ns
 ```
+---
+### DSA Exercise 7
+![image](https://github.com/user-attachments/assets/3d7e3d4b-b5c9-4be4-9ed9-7b42be35c2e8)
+Output:  
+```
+Future value after 5 years is: INR 16105.1
+```
+---
+
 
