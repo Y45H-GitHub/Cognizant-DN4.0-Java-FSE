@@ -1,4 +1,4 @@
-# PL/SQL EX-1 Ouptuts
+# **PL/SQL EX-1 Ouptuts**
 
 ### Before Executing query- Customer Table
 
@@ -20,7 +20,7 @@
 
 ![ex1 after scenario3 ](https://github.com/user-attachments/assets/ac511ba7-c10a-497c-887b-5ffd96630583)
 
-# PL/SQL EX-3 Ouptuts
+# **PL/SQL EX-3 Ouptuts**
 
 ### Scenario 1 Outputs
 ![ex3 sc1](https://github.com/user-attachments/assets/b652224e-9f4a-4838-8c69-38a6e0dc0ed2)
@@ -34,5 +34,8 @@
 ![ex3 sc3 ](https://github.com/user-attachments/assets/8cffc665-0ebf-485a-904c-97aa97ea7546)
 ![ex3 sc3 (2) ](https://github.com/user-attachments/assets/a99c463e-40a3-481a-86bd-e2d28c0f7cf4)
 
+## **JUnit Basic Testing Outputs**
+![image](https://github.com/user-attachments/assets/0ce97bc0-b6ec-43c8-9df2-83a8beb2759a)
+![image](https://github.com/user-attachments/assets/0cf5ad52-9d34-4b6b-b8a0-1a270969f399)
 
 
