@@ -38,4 +38,8 @@
 ![image](https://github.com/user-attachments/assets/0ce97bc0-b6ec-43c8-9df2-83a8beb2759a)
 ![image](https://github.com/user-attachments/assets/0cf5ad52-9d34-4b6b-b8a0-1a270969f399)
 
+# **Mockito Ouptuts**
+![image](https://github.com/user-attachments/assets/f0f617ca-2b8f-4f09-af62-a59beec8f9a8)
+![image](https://github.com/user-attachments/assets/739ff52d-cfc1-4119-97ba-2ae0c565e6cb)
+
 
