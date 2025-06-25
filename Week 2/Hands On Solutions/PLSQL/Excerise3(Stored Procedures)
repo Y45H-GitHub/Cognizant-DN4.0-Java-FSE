@@ -1,0 +1,114 @@
+-- SCENARIO 1: The bank needs to process monthly interest for all savings accounts.
+-- Question: Write a stored procedure ProcessMonthlyInterest that calculates and updates the balance of all savings accounts by applying an interest rate of 1% to the current balance.
+-- Solution:
+
+CREATE OR REPLACE PROCEDURE ProcessMonthlyInterest AS
+BEGIN
+    FOR acc IN (
+        SELECT AccountID, Balance 
+        FROM Accounts 
+        WHERE AccountType = 'Savings'
+    ) LOOP
+        UPDATE Accounts
+        SET Balance = Balance + (acc.Balance * 0.01)
+        WHERE AccountID = acc.AccountID;
+        DBMS_OUTPUT.PUT_LINE('Interest applied to Account ID: ' || acc.AccountID);
+    END LOOP;
+
+    COMMIT;
+END;
+/
+
+BEGIN
+    ProcessMonthlyInterest;
+END;
+/
+
+SELECT AccountID, AccountType, Balance FROM Accounts WHERE AccountType = 'Savings';
+
+-- SCENARIO 2: The bank wants to implement a bonus scheme for employees based on their performance.
+-- Question: Write a stored procedure UpdateEmployeeBonus that updates the salary of employees in a given department by adding a bonus percentage passed as a parameter.
+-- Solution:
+
+CREATE OR REPLACE PROCEDURE UpdateEmployeeBonus (
+    p_department IN VARCHAR2,
+    p_bonus_percent IN NUMBER
+) AS
+BEGIN
+    FOR emp IN (
+        SELECT EmployeeID, Name, Salary 
+        FROM Employees 
+        WHERE Department = p_department
+    ) LOOP
+        UPDATE Employees
+        SET Salary = Salary + (emp.Salary * p_bonus_percent / 100)
+        WHERE EmployeeID = emp.EmployeeID;
+
+        DBMS_OUTPUT.PUT_LINE('Bonus applied to ' || emp.Name || 
+                             ' (New Salary: ' || TO_CHAR(emp.Salary + (emp.Salary * p_bonus_percent / 100)) || ')');
+    END LOOP;
+
+    COMMIT;
+END;
+/
+
+BEGIN
+    UpdateEmployeeBonus('HR', 10);
+END;
+/
+
+SELECT * FROM Employees WHERE Department = 'HR';
+
+
+
+-- SCENARIO 3: Customers should be able to transfer funds between their accounts.
+-- Question: Write a stored procedure TransferFunds that transfers a specified amount from one account to another, checking that the source account has sufficient balance before making the transfer.
+-- Solution:
+
+
+CREATE OR REPLACE PROCEDURE TransferFunds (
+    p_from_account IN NUMBER,
+    p_to_account IN NUMBER,
+    p_amount IN NUMBER
+) AS
+    v_from_balance Accounts.Balance%TYPE;
+BEGIN
+    -- Get source account balance
+    SELECT Balance INTO v_from_balance
+    FROM Accounts
+    WHERE AccountID = p_from_account;
+
+    -- Check for sufficient funds
+    IF v_from_balance < p_amount THEN
+        DBMS_OUTPUT.PUT_LINE('Transfer failed: Insufficient balance in Account ' || p_from_account);
+    ELSE
+        -- Deduct from source account
+        UPDATE Accounts
+        SET Balance = Balance - p_amount
+        WHERE AccountID = p_from_account;
+
+        -- Add to destination account
+        UPDATE Accounts
+        SET Balance = Balance + p_amount
+        WHERE AccountID = p_to_account;
+
+        DBMS_OUTPUT.PUT_LINE('Transfer of ₹' || p_amount || 
+                             ' from Account ' || p_from_account || 
+                             ' to Account ' || p_to_account || ' successful.');
+
+        COMMIT;
+    END IF;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        DBMS_OUTPUT.PUT_LINE('Transfer failed: One of the accounts does not exist.');
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Transfer failed: ' || SQLERRM);
+END;
+/
+
+BEGIN
+    TransferFunds(1, 2, 500);  -- transfer ₹500 from Account 1 to Account 2
+END;
+/
+
+SELECT AccountID, CustomerID, AccountType, Balance FROM Accounts;
