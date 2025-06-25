@@ -42,4 +42,8 @@
 ![image](https://github.com/user-attachments/assets/f0f617ca-2b8f-4f09-af62-a59beec8f9a8)
 ![image](https://github.com/user-attachments/assets/739ff52d-cfc1-4119-97ba-2ae0c565e6cb)
 
+# **SLF4J Logging Output**
+![image](https://github.com/user-attachments/assets/f9ce821e-4100-4494-9358-f2c593372f9a)
+
+
 
