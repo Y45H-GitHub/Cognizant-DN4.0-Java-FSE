@@ -1,4 +1,4 @@
-package com.yash.BasicSpringApplication.repo;
+package com.yash.LibraryManagement.repo;
 
 /**
  * A basic repository that simulates data access for books.

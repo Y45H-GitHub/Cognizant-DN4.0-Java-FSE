@@ -1,7 +1,7 @@
-package com.yash.BasicSpringApplication.service;
+package com.yash.LibraryManagement.service;
 
 
-import com.yash.BasicSpringApplication.repo.BookRepository;
+import com.yash.LibraryManagement.repo.BookRepository;
 
 public class BookService {
 

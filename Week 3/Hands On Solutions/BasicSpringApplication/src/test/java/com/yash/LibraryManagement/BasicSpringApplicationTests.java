@@ -1,4 +1,4 @@
-package com.yash.BasicSpringApplication;
+package com.yash.LibraryManagement;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

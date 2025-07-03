@@ -1,7 +1,7 @@
-package com.yash.BasicSpringApplication;
+package com.yash.LibraryManagement;
 
 
-import com.yash.BasicSpringApplication.service.BookService;
+import com.yash.LibraryManagement.service.BookService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
