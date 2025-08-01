@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  margin: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.currency-convertor {
+  margin-top: 30px;
+}
+
+input {
+  padding: 8px;
+  font-size: 1rem;
+  width: 200px;
+  margin-right: 10px;
+}
